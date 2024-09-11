@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = 0, sum1 = 0;
+        const numbers = [65, 33, 12, 4];
+        numbers.forEach(myFunction);
+        numbers.forEach((value) => { //화살표 함수
+                sum += value
+                console.log()
+            }
+        );
+        
+        function myFunction(value){
+            sum += value;
+        }
+        function myFunction2(value, index, arr) { //함수(요소, 인덱스(선택)), 배열명(선택)))
+            sum += value;
+        }
+        document.write(sum1);
+        
+    </script>
+
+</body>
+</html>
