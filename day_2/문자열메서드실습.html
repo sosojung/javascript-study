@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--head 에 복사 붙이기 하세요 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  </head> 
+  <body>  
+    <form name="form">
+        <div class="mb-3">
+            <label>문자열 입력</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>결과</label>
+            <input type="text" class="Form-Control" id="result" onkeyup = "getstring()" readonly>
+          </div>
+          <div class="card-body" id="result2"></div>
+          <button type="button" class="btn btn-primary">문자열 추출(substring)</button>
+          <button type="button" class="btn btn-primary">reset</button>
+
+    </form>
+  </body>
+
+</html>

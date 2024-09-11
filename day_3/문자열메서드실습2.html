@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>문자열입력</label>
+            <input type="text" id="string1">
+        </div>
+        <div>
+            <label>결과</label>
+            <input type="text" readonly id="result">
+            <div id="result2">
+                값 넣을 예정
+            </div>
+            <button type="button" id="result2">문자열추출</button>
+            <button type="button" id="upper" onclick="upper()">대문자변환</button>
+            <button type="button" id="length" onclick="length()">문자열길이</button>
+            <button>문자열 공백제거</button>
+            <button>문자열 합치기</button>
+            <button>reset</button>
+        </div>
+    </form>
+    <script>
+        let string1 = document.getElementById("string1");
+        let inputVal;
+        let result = document.getElementById("result");
+        let result2 = document.getElementById("result2");
+
+        let 
+
+        function length() {
+
+        }
+
+        function upper() {
+            result.value = inputVal.toUppperCase();
+        }
+
+        function getString() {
+            inputVal = string1.value; //input은 무조건 value로 가져온다
+            console.log(inputVal);
+            result.value = inputVal.substring(0, 4) + "년" + inputVal.substring(4, 6)
+                                    +"월"+ inputVal.substring(6, 8);
+            result2.innerHTML = "결과가 성공적으로 처리되었습니다."//div에는 value가 안된다??
+        }
+
+        function reseting() {
+            frm.reset();
+            result2.innerHTML;
+        }
+    </script>
+</body>
+</html>
