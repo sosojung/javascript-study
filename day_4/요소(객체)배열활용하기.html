@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         .acc { /*아코디언*/
-        background-color: #ffffff;
+        background-color: #DBDBDB;
         color: #444;
         cursor: pointer;
         padding: 18px;
@@ -47,6 +47,20 @@
     <script>
         let acc2 = document.querySelectorAll(".acc"); // 배열
         let cont2 = document.querySelectorAll(".content");
+
+        for(let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", () => {
+                this.classList.toggle("active");
+
+                let content = this.nextElementSibling;
+
+                if(content.style.display == "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            })
+        }
 
         function show(i) {
 
